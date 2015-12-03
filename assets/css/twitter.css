@@ -5,8 +5,8 @@
 
 /* line 6, ../compass/sass/twitter.scss */
 #tweets-wrapper {
-  overflow: scroll;
-  height: 60vh;
+  overflow: hidden;
+  height: 600vh;
   position: relative;
 }
 /* line 10, ../compass/sass/twitter.scss */

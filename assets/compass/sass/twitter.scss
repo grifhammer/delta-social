@@ -4,8 +4,8 @@
 
 
 #tweets-wrapper {
-	overflow: scroll;
-	height: 60vh;
+	overflow: hidden;
+	height: 600vh;
 	position: relative;
 	.delta-tweets {
 		padding: 10px 0;

@@ -41,14 +41,16 @@
                    
                     <div class="FB col-md-4" ng-controller="facebookCtrl">
                         <h2 class="facebook"> Facebook</h2>
-                        <div class="fb-post">
-                            <div class="posts row" ng-repeat="post in posts">
-                                <img src="{{post.picture}}" class="col-md-3">
-                                <div class="col-md-9">
-                                    <span class="bold">{{post.from.name}}:</span> {{post.message}}
+                        <marquee direction="up" height="60vh">
+                            <div class="fb-post">
+                                <div class="posts row" ng-repeat="post in posts">
+                                    <img src="{{post.picture}}" class="col-md-3">
+                                    <div class="col-md-9">
+                                        <span class="bold">{{post.from.name}}:</span> {{post.message}}
+                                    </div>
                                 </div>
                             </div>
-                        </div>
+                        </marquee>
                     </div>
 
                     <!-- ************  INSTAGRAM COL  ************ -->
@@ -120,16 +122,18 @@
                     <!-- ************  TWITTER COL  ************ -->
                     <div id="twitter-wrapper" class="col-md-4">
                         <h2 id="twitter-title">Twitter</h2>
-                        <div id="tweets-wrapper"  ng-controller="twitterController">   
-                            <div class="delta-tweets" ng-repeat="tweet in tweets">
-                                <div class="tweet-content">
-                                <img src="{{tweet.user.profile_image_url}}" class="prof-img">
-                                    <a href="#" class="twitter-user-name">{{tweet.user.name}}<span>@{{tweet.user.screen_name}}</span></a>
-                                    <span class="bold">{{ tweet.text }}</span>
-                                </div> 
-                            </div>
+                        <marquee direction="up" height="60vh">
+                            <div id="tweets-wrapper"  ng-controller="twitterController">   
+                                <div class="delta-tweets" ng-repeat="tweet in tweets">
+                                    <div class="tweet-content">
+                                    <img src="{{tweet.user.profile_image_url}}" class="prof-img">
+                                        <a href="#" class="twitter-user-name">{{tweet.user.name}}<span>@{{tweet.user.screen_name}}</span></a>
+                                        <span class="bold">{{ tweet.text }}</span>
+                                    </div> 
+                                </div>
 
-                        </div>
+                            </div>
+                        </marquee>
                     </div>
                 </div>
     
